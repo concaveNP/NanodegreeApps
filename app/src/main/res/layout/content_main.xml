@@ -7,8 +7,72 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:theme="@style/NanodegreeApps">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:theme="@style/NanodegreeAppsTitle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spotify_streamer"
+        android:id="@+id/spotify_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_duo"
+        android:id="@+id/supoer_duo_button"
+        android:layout_below="@+id/spotify_button"
+        android:layout_alignRight="@+id/spotify_button"
+        android:layout_alignEnd="@+id/spotify_button"
+        android:layout_alignLeft="@+id/spotify_button"
+        android:layout_alignStart="@+id/spotify_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/build_it_bigger"
+        android:id="@+id/build_it_bigger_button"
+        android:layout_below="@+id/supoer_duo_button"
+        android:layout_alignLeft="@+id/supoer_duo_button"
+        android:layout_alignStart="@+id/supoer_duo_button"
+        android:layout_alignRight="@+id/supoer_duo_button"
+        android:layout_alignEnd="@+id/supoer_duo_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xyz_reader"
+        android:id="@+id/xyz_reader"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/build_it_bigger_button"
+        android:layout_alignStart="@+id/build_it_bigger_button"
+        android:layout_alignRight="@+id/capstone"
+        android:layout_alignEnd="@+id/capstone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capstone"
+        android:id="@+id/capstone"
+        android:layout_below="@+id/xyz_reader"
+        android:layout_alignRight="@+id/supoer_duo_button"
+        android:layout_alignEnd="@+id/supoer_duo_button"
+        android:layout_alignLeft="@+id/build_it_bigger_button"
+        android:layout_alignStart="@+id/build_it_bigger_button" />
+
+
 </RelativeLayout>
