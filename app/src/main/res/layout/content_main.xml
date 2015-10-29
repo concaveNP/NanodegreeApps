@@ -18,50 +18,78 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:theme="@style/NanodegreeAppsTitle"
         android:layout_marginTop="33dp"
-        android:theme="@style/NanodegreeAppsTitle" />
+        android:layout_marginBottom="33dp"
+        />
+
+    <Space
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:id="@+id/space_sizer"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/spotify_streamer"
         android:id="@+id/spotify_button"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/space_sizer"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp" />
+        android:layout_alignLeft="@+id/space_sizer"
+        android:layout_alignRight="@+id/space_sizer"
+        android:theme="@style/NanodegreeAppsButton"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/super_duo"
-        android:id="@+id/supoer_duo_button"
+        android:text="@string/super_duo_scores"
+        android:id="@+id/super_duo_scores_button"
         android:layout_below="@+id/spotify_button"
-        android:layout_alignRight="@+id/spotify_button"
-        android:layout_alignEnd="@+id/spotify_button"
-        android:layout_alignLeft="@+id/spotify_button"
-        android:layout_alignStart="@+id/spotify_button" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/space_sizer"
+        android:layout_alignRight="@+id/space_sizer"
+        android:theme="@style/NanodegreeAppsButton"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_duo_library"
+        android:id="@+id/super_duo_library_button"
+        android:layout_below="@+id/super_duo_scores_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/space_sizer"
+        android:layout_alignRight="@+id/space_sizer"
+        android:theme="@style/NanodegreeAppsButton"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/build_it_bigger"
         android:id="@+id/build_it_bigger_button"
-        android:layout_below="@+id/supoer_duo_button"
-        android:layout_alignLeft="@+id/supoer_duo_button"
-        android:layout_alignStart="@+id/supoer_duo_button"
-        android:layout_alignRight="@+id/supoer_duo_button"
-        android:layout_alignEnd="@+id/supoer_duo_button" />
+        android:layout_below="@+id/super_duo_library_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/space_sizer"
+        android:layout_alignRight="@+id/space_sizer"
+        android:theme="@style/NanodegreeAppsButton"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/xyz_reader"
         android:id="@+id/xyz_reader"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/build_it_bigger_button"
-        android:layout_alignStart="@+id/build_it_bigger_button"
-        android:layout_alignRight="@+id/capstone"
-        android:layout_alignEnd="@+id/capstone" />
+        android:layout_below="@+id/build_it_bigger_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/space_sizer"
+        android:layout_alignRight="@+id/space_sizer"
+        android:theme="@style/NanodegreeAppsButton"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -69,10 +97,12 @@
         android:text="@string/capstone"
         android:id="@+id/capstone"
         android:layout_below="@+id/xyz_reader"
-        android:layout_alignRight="@+id/supoer_duo_button"
-        android:layout_alignEnd="@+id/supoer_duo_button"
-        android:layout_alignLeft="@+id/build_it_bigger_button"
-        android:layout_alignStart="@+id/build_it_bigger_button" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/space_sizer"
+        android:layout_alignRight="@+id/space_sizer"
+        android:theme="@style/NanodegreeAppsCapstoneButton"
+        />
+
 
 
 </RelativeLayout>

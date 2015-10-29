@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,12 +20,51 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        Button spotifyButton = (Button) findViewById(R.id.spotify_button);
+        spotifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.spotify_streamer) + " app!" , Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button scoresButton = (Button) findViewById(R.id.super_duo_scores_button);
+        scoresButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.super_duo_scores) + " app!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button libraryButton = (Button) findViewById(R.id.super_duo_library_button);
+        libraryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.super_duo_library) + " app!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button biggerButton = (Button) findViewById(R.id.build_it_bigger_button);
+        biggerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.build_it_bigger) + " app!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button xyzButton = (Button) findViewById(R.id.xyz_reader);
+        xyzButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.xyz_reader) + " app!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button capstoneButton = (Button) findViewById(R.id.capstone);
+        capstoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.capstone) + " app!", Toast.LENGTH_SHORT).show();
             }
         });
     }
