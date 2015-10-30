@@ -22,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
         spotifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.spotify_streamer) + " app!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getApplicationContext(),
+                        "This will launch my: " + getResources().getString(R.string.spotify_streamer) + " app!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -30,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
         scoresButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.super_duo_scores) + " app!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getApplicationContext(),
+                        "This will launch my: " + getResources().getString(R.string.super_duo_scores) + " app!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -38,7 +44,10 @@ public class MainActivity extends AppCompatActivity {
         libraryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.super_duo_library) + " app!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getApplicationContext(),
+                        "This will launch my: " + getResources().getString(R.string.super_duo_library) + " app!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -46,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
         biggerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.build_it_bigger) + " app!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getApplicationContext(),
+                        "This will launch my: " + getResources().getString(R.string.build_it_bigger) + " app!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -54,7 +66,10 @@ public class MainActivity extends AppCompatActivity {
         xyzButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.xyz_reader) + " app!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getApplicationContext(),
+                        "This will launch my: " + getResources().getString(R.string.xyz_reader) + " app!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -62,7 +77,10 @@ public class MainActivity extends AppCompatActivity {
         capstoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This will launch my: " + getResources().getString(R.string.capstone) + " app!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getApplicationContext(),
+                        "This will launch my: " + getResources().getString(R.string.capstone) + " app!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
     }
