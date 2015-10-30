@@ -7,33 +7,34 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
-
-    <style name="NanodegreeApps" parent="ThemeOverlay.AppCompat.Dark" >
+    <style name="NanodegreeApps" parent="ThemeOverlay.AppCompat.Dark">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="NanodegreeAppsTitle" parent="NanodegreeApps" >
+    <style name="NanodegreeAppsTitle" parent="NanodegreeApps">
         <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
-    <style name="NanodegreeAppsButton" parent="NanodegreeApps" >
+    <style name="NanodegreeAppsButton" parent="NanodegreeApps">
         <item name="colorButtonNormal">@android:color/holo_blue_dark</item>
     </style>
 
-    <style name="NanodegreeAppsCapstoneButton" parent="NanodegreeAppsButton" >
+    <style name="NanodegreeAppsCapstoneButton" parent="NanodegreeAppsButton">
         <item name="colorButtonNormal">@android:color/holo_green_dark</item>
     </style>
-
 
 
 </resources>
